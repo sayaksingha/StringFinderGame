@@ -23,13 +23,13 @@ public class AllFunctionmpl implements AllFunction {
     	//find 
  
     	for(int i=0;i<Char1.length;i++) {
-    		start=i;
+    		int f=i;
     		for(int j=0;j<Char2.length;j++) {
     			if(Char1[i]==Char2[j]) {
     				i++;
     				if(j==Char2.length-1) {
-    					
-    					end=i;
+    					start=f;
+    					end=i-1;
     					flag=true;
     				}
     			}
